@@ -1,0 +1,279 @@
+.nav-tabs, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: none;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: #fff;
+	background: #6BCEAF
+}
+.nav-tabs .nav-link {
+    border: none !important;
+}
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+div[role="presentation"] {
+    cursor: pointer;
+    position: relative;
+}
+
+#tabs h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+    transition: all .4s;
+}
+#tabs h2, #tabs p {
+    text-align: center;
+}
+div[role="presentation"].active h2, div[role="presentation"].active p, .carousel-item.active header h3 {
+    background: #1e5799;
+    background: -moz-linear-gradient(left, #1e5799 0%, #68cbaf 100%);
+    background: -webkit-linear-gradient(left, #1e5799 0%,#68cbaf 100%);
+    background: linear-gradient(to right, #1e5799 0%,#68cbaf 100%);
+        background-clip: border-box;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#68cbaf',GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+div[role="presentation"].active h2 {
+    letter-spacing: 2px;
+}
+
+#tabs p {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#myTabContent {
+    overflow: hidden;
+}
+
+.tab-pane.active {
+    opacity: 1;
+}
+.tab-content > .active {
+    display: block !important;
+}
+.tab-content > .tab-pane {
+    display: none;
+}
+.tab-pane {
+    opacity: 0;
+    transition: opacity .4s !important;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    max-width: 86%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    overflow: visible;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: block;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.carousel-item header.active {
+    animation: growUp 2s linear forwards;
+}
+.carousel-item header {
+    transition: all .4s;
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+    display: flex !important;
+    justify-content: center;
+    position: absolute;
+}
+
+
+#carouselAnalytics .carousel-item header::before, #carouselAnalytics .carousel-item header::after {
+
+    left: 5%;
+
+}
+.carousel-item header::before {
+
+    top: -3px;
+    width: 2px;
+    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#1e5799), to(#68cbaf));
+    background-image: -webkit-linear-gradient(#68cbaf, #1e5799);
+    background-image: -moz-linear-gradient(#68cbaf, #1e5799);
+    background-image: -o-linear-gradient(#68cbaf, #1e5799);
+
+}
+.carousel-item header::before, .carousel-item header::after {
+
+    content: "";
+    position: absolute;
+    bottom: -3px;
+
+}
+.carousel-item.active header h3 {
+    position: absolute;
+    bottom: -25px;
+}
+div[role="presentation"].active h2, div[role="presentation"].active p, .carousel-item.active header h3 {
+    background: #1e5799;
+    background: -moz-linear-gradient(left, #1e5799 0%, #68cbaf 100%);
+    background: -webkit-linear-gradient(left, #1e5799 0%,#68cbaf 100%);
+    background: linear-gradient(to right, #1e5799 0%,#68cbaf 100%);
+        background-clip: border-box;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#68cbaf',GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.carousel-item header h3 {
+    text-align: center;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.carousel-item header span {
+    background: white;
+    position: absolute;
+    bottom: -25px;
+    height: 50px;
+    width: 230px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+#carouselAnalytics .carousel-item header::before, #carouselAnalytics .carousel-item header::after {
+    left: 5%;
+}
+.carousel-item header::after {
+    right: -3px;
+    height: 2px;
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#1e5799), to(#68cbaf));
+    background-image: -webkit-linear-gradient(left, #1e5799, #68cbaf);
+    z-index: -2;
+    background-image: -moz-linear-gradient(left, #1e5799, #68cbaf);
+    background-image: -o-linear-gradient(left, #1e5799, #68cbaf);
+    width: 103%;
+}
+.carousel-item header::before, .carousel-item header::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+}
+.carousel-item main {
+    margin-bottom: 30px;
+    padding-top: 170px;
+}
+#tabs img {
+    margin: 0 auto 50px;
+    display: block;
+    max-width: 700px;
+}
+.carousel-control-next {
+    right: 0;
+}
+.carousel-control-prev {
+    left: 0;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+.carousel-indicators .active {
+    background-color: #fff;
+}
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(255,255,255,.5);
+}
+
+.carousel-indicators li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+
+.carousel-indicators li::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+}

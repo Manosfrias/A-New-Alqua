@@ -1,0 +1,151 @@
+.grey {background: #fbfbfb}
+.grey  h2 {font-size: 3rem; text-align: center; padding-top: 25px; }
+.tabcontent {display: none;padding: 3rem 0;border-top: none;width: 100%;}
+.tabcontent.active {display: block;}
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+div[role="presentation"] {text-align: center;}
+.tablinks {cursor: pointer;}
+.tablinks.active {color: #000}
+.tablinks, .tablinks h3{transition: all .2s}
+.tablinks.active h3{font-size: 2rem; letter-spacing: .2rem}
+.video{background: transparent url(../img/back/try-our-technology-suite-alqua.jpg) no-repeat center/cover;
+position: relative; }
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+.slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  list-style: none;
+}
+
+.slider ul li {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+ .slide img {max-width: 500px}
+button.control_prev, button.control_next {
+    background: transparent url(../img/iconos/open.svg) no-repeat center /contain;
+    width: 40px;
+    transition: all .4s;
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  height: auto;
+  opacity: 0.8;
+  cursor: pointer;
+  border: none;
+  height: 115px
+}
+button.control_next {transform: rotate(-180deg);}
+
+button.control_prev:hover, button.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+
+
+button.control_next {
+  right: 0;
+}
+
+.video h2 {font-size: 3rem; padding-bottom: 15px;}
+.video > div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+.render{background: transparent url(../img/back/Ipad-Pro.jpg) no-repeat center/cover; padding-bottom: 50px}
+.render h1 {font-size: 3rem; padding: 5% 5% 0 0}
+
+.render header{max-width: 50%}
+.botones {width: 75%}
+.render p {position: absolute; bottom: 5%;     max-width: 50%;}
+#try h2 {font-size: 2rem; letter-spacing: 0; text-align: center; }
+.botones {position: absolute;bottom: 0;}
+#instagramChallenge h2 {font-size: 2rem;font-weight: 700; text-align: center; text-transform: uppercase; color: #fff; margin-bottom: 25px}
+#instagramChallenge p{color: #333a42; text-align: center;}
+#instagramChallenge {background: #6BCEAFB3; position: absolute;
+top: 0;
+bottom: 0;
+margin: auto;
+max-height: 40%;
+right: 5%;
+border-radius: 25px;
+padding: 2rem;}
+.surfer { position: relative; background: transparent url(../img/back/challenge-your-ig.jpg) no-repeat center / cover}
+.padding {padding: 20px 0; position: relative; }
+.btn-white-solid {padding:.2 1rem; background: #fff; display: block; margin: 0 auto; max-width: 65%; font-size: 1.5rem; border: 1px solid #fff;
+	transition: all .4s}
+.btn-white-solid span {
+	  background: #037095;
+  background: -moz-linear-dgradient(left,  #037095 0%, #4aa8a0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #037095 0%,#4aa8a0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #037095 0%,#4aa8a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037095', endColorstr='#4aa8a0',GradientType=1 ); /* IE6-9 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .4s
+}
+.btn-white-solid:hover {background: transparent;}
+.btn-white-solid span:hover, .btn-white-solid:hover span, .btn-white-solid:hover span:hover {color:  #fff}
+/*INTERIOR Formulario*/
+.ig-entry{
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+.ig-entry-input {
+    min-width: 23rem;
+	max-width: 100%;
+	margin: 0;
+	color: #fff;
+	border: 1px solid #04123B;
+	border-radius: 30px;
+	background: transparent;
+	padding: .5rem 1rem;
+	font-weight: 100
+}
+.ig-entry-control {
+  cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    margin: auto;
+    right: 0;
+    z-index: 5;
+    color: #04123B;
+    border: none;
+    background-color: transparent;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: color .4s;
+}
+.ig-entry-control:hover {
+  color: #fff;
+}

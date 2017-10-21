@@ -1,0 +1,160 @@
+section {background: #333a42 url(../img/back/contacto.svg) no-repeat left center / contain;}
+section .contenido {display: flex; 
+flex-direction: column;
+justify-content: center;max-width: 40%; margin: 0 auto}
+h1 {font-size: 3rem;text-shadow:  0px 0px 15px rgba(255,255,255,0.5)}
+h2, address {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    font-weight: 100;
+    font-style: normal;
+}
+
+address {position: absolute; bottom: 0}
+address p {padding: 0px}
+ul.rrss {padding: 0 0 1rem; margin: 0; list-style: none}
+ul.rrss li {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px; 
+    height: 25px;
+    margin-right: 20px;
+    background-image: url(../img/iconos/rrss.svg);
+}
+ul.rrss li {display: inline-block;}
+ul.rrss li.fb{background-position: 0 0; width: 15px !important; }
+ul.rrss li.ig{background-position: -34px 0;}
+ul.rrss li.twitter{background-position: -78px 0;}
+ul.rrss li.gp{background-position: -124px 0;}
+ul.rrss li.pin{background-position: -171px 0;}
+
+/*Cerrado*/
+#formulario{
+    position: absolute;
+    right: 0;
+    padding: 1rem 1rem 1rem 5rem;
+    width: 225px;
+    height: 190px;
+    border-radius: 50px 0 0 50px;
+    transition: all .4s;
+}
+#formulario #abrir {
+    background: transparent url(../img/iconos/open.svg) no-repeat center /contain;
+    width: 30px;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    bottom: 0px;
+    margin: auto;
+    transition: all .4s
+    transform: rotate(0deg)
+}
+#formulario.open #abrir{
+    left: 40px;
+    transform: rotate(-180deg)
+}
+#formulario h2 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #333a42;
+}
+
+#formulario .col:last-of-type{display: none}
+
+/*Abierto*/
+#formulario.open {width: 750px; height: 500px}
+#formulario.open .col:last-of-type{display: block; width: calc(100% - 175px;); max-width: 100%}
+#formulario.open .col.texto {max-width: 175px;}
+div.tab {overflow: hidden;}
+div.tab  {border: 1px solid #fff; overflow: hidden; border-radius: 10px; width: 100%; max-width: 100%;}
+button, #abrir { cursor: pointer;}
+div.tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 33.33%;
+    height: 10px;
+    background: transparent;
+    padding: 0px;
+}
+
+div.tab button:active,div.tab button:checked,
+div.tab button.active {background-color: #fff;}
+.tabcontent {display: none;padding: 3rem 0;border-top: none;width: 450px;}
+.tabcontent.active {display: block;}
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+label {display:block; text-transform: uppercase; color: #fff;padding: .2rem .5rem;}
+input{max-width: 100%; width: 100%;}
+button.next{
+   
+    background: #fff;
+    color: #6CCFB0;
+    border: none;
+    text-transform: uppercase;
+    padding: .5rem 2rem;
+    border-radius: 25px 0 0 25px;
+    position: relative;
+}
+button.next:before {
+   content: "";
+    position: absolute;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 12px solid #fff;
+    top: 0;
+}
+input[type="text"],input[type="email"],input[type="phone"]{
+    background: transparent;
+    color: white;
+    border-color: #fff;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    text-transform: uppercase;
+    padding: .2rem 1rem;
+}
+::-webkit-input-placeholder, :-ms-input-placeholder {color: #fff;}
+
+::-moz-placeholder, :-moz-placeholder { color: #fff; opacity: 1;}
+textarea::-moz-placeholder, textarea:-moz-placeholder { opacity: .8 !important;}
+textarea{
+  font-size: .75rem;
+    width: 100%;
+    background: transparent;
+    color: white;
+    border-color: #fff;
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+    padding: .2rem;
+}
+#userName {text-transform: capitalize;}
+.tabcontent p{color: white}
+@media screen and (min-width: 861px) {
+      .col:first-of-type .bottom p, h1 {font-size: calc(2vw +  1vmin);line-height: calc(2vw +  1vmin);}
+      .name input:nth-of-type(2) {max-width: 69%}
+    .name input:first-of-type{max-width: 28%;}
+    .name input:first-of-type{margin-right: 2%}
+     input, textarea {margin-bottom: 5rem;}
+}
+@media screen and (max-width: 860px) {
+    .name input{max-width: 100%;}
+   
+   
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

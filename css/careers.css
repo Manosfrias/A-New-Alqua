@@ -1,0 +1,210 @@
+h1{letter-spacing: .5rem; text-transform: uppercase; font-weight: 300; text-shadow:  0px 0px 10px rgba(255,255,255,0.5)}
+
+section.montana {padding: 5% 0 }
+
+.tab, .form-group:first-of-type{display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;}
+.tablinks { 
+	height: 235px;
+	background: transparent;
+	border: none;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; position: relative;}
+.tablinks p {transition: all .4s; text-transform: uppercase; padding-bottom: 0}
+.tablinks img{ transform: scale(.8); transition: transform .4s; padding:0 }
+.tablinks p {position: absolute; bottom: 0; left: 0; right: 0; margin: auto}
+.tablinks:nth-child(3) p, .tablinks:nth-child(5) p {position: absolute; bottom: 24px}
+
+.tablinks.not-active p {font-size: 14px; color: inherit;}
+.tablinks.not-active img {transform: scale(.6);}
+.tablinks.active img {transform: scale(1);}
+.tablinks.active p{  background: #037095;
+  background: -moz-linear-dgradient(left,  #037095 0%, #4aa8a0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #037095 0%,#4aa8a0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #037095 0%,#4aa8a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037095', endColorstr='#4aa8a0',GradientType=1 ); /* IE6-9 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; font-size: 20px}
+
+div.tab {overflow: hidden;}
+button{ cursor: pointer;}
+
+.tabcontent {display: none;padding: 3rem 0;border-top: none;}
+.tabcontent.active {display: block;}
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+label{display: block; width: 24%; position: relative;}
+.tabcontent input, button.cv{
+	 width: 100%;
+	border: none;
+	text-transform: uppercase;
+	font-size: 14px !important;
+	margin-bottom: 5px;
+	position: relative;
+	background: #037095;
+  background: -moz-linear-dgradient(left,  #037095 0%, #4aa8a0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #037095 0%,#4aa8a0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #037095 0%,#4aa8a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037095', endColorstr='#4aa8a0',GradientType=1 ); /* IE6-9 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; font-size: 20px
+}
+.form-group + .form-group {margin-top: 50px; display: flex; justify-content: center; align-items: center; align-content: center;}
+.tabcontent label:after {
+ right: 0px; height: 2px; 
+  content: ""; position: absolute; bottom: -3px; left: -3px;
+background: #037095;
+  background: -moz-linear-dgradient(left,  #037095 0%, #4aa8a0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #037095 0%,#4aa8a0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #037095 0%,#4aa8a0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#037095', endColorstr='#4aa8a0',GradientType=1 ); /* IE6-9 */
+ }
+ @media screen and (min-width: 861px) {
+      .col:first-of-type .bottom p, h1 {font-size: calc(2vw +  1vmin);line-height: calc(2vw +  1vmin);}
+      .name input:nth-of-type(2) {max-width: 69%}
+    .name input:first-of-type{max-width: 28%;}
+    .name input:first-of-type{margin-right: 2%}
+     input, textarea {margin-bottom: 5rem;}
+}
+@media screen and (max-width: 860px) {
+    .name input{max-width: 100%;}
+   
+   
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+section.aqua {padding: 1rem; text-align: center;}
+section.aqua p {padding-bottom: 0}
+
+.cv-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+a.btn-gradient {margin-left: 15px}
+button.cv{
+  border: 2px solid #6BCEAF;
+  background-color: white;
+  padding: .5rem 3rem;
+  border-radius: 25px;
+  margin: 0;
+  font-size: 16px
+}
+
+.cv-btn-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  margin: 0
+}
+
+input.btn {display: inline-block;}
+
+@media all and (max-width: 768px){
+	h1 {font-size: calc(5vw + 3vmin);}
+	h3, p.subtitle {font-size: 1rem;}
+
+.tab {display: block;}
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  width: auto;
+  height: auto;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+   color: black;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+
+}
+
+}
